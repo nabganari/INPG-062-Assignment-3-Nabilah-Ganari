@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assest/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav>
+                <button class="btn btn-primary btn-nag Active" type="button">Statistic</button>
+                <button class="btn btn-primary deactive" type="button">History</button>
+            </nav>
+        </header>
+        <main>
+            <div class="justify-content-between searchCovid">
+                <h1>Covid-19 Tracker</h1>
+                <div class="input-group mb-3 gap-3  searchCovidDroplist ">
+                    <label class="input-group-text" for="inputGroupSelect01">Select Country</label>
+                    <select class="form-select " name="inputGroupSelect01" id="inputGroupSelect01">
+                        <!-- <option selected>Choose Country...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option> -->
+                    </select>
+                    <button class="btn btn-primary btn-nag Active" type="button" onclick=getData()>Search</button>
+                </div>
+            </div>
+
+            <div class="primary-content-container d-flex flex-row justify-content-between ">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Active Cases</h5>
+                        <div id="active-cases">0</div>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">New Cases</h5>
+                        <div id="new-cases">0</div>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Recovered Cases</h5>
+                        <div id="recovered-cases">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="primary-content-container d-flex flex-row justify-content-between ">
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Cases</h5>
+                        <div id="total-cases">0</div>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Death</h5>
+                        <div id="total-deaths">0</div>
+                    </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Tests</h5>
+                        <div id="total-tests">0</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="./assest/js/script.js"></script>
+</body>
+
+</html>

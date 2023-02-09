@@ -1,0 +1,42 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.standartTemplate {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+padding: 20px;
+}
+
+.btn-nag .deactive{
+    background-color: #ffffff !important;
+    border: none;
+    color: black!important ;
+}
+
+.Active{
+    background-color: #98A8F8 !important;
+    border: none;
+}
+
+.btn-nag:hover{
+    background-color: #BCCEF8;
+}
+
+.searchCovid{
+    display: block;
+    text-align: center;
+}
+
+
+button {
+    margin: 10px;
+}
+
+.primary-content-container{
+    margin : 50px 10% 50px 10%;
+}
